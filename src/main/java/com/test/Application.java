@@ -21,6 +21,7 @@ public class Application {
         ApplicationContext context = SpringApplication.run(Application.class);
         Environment env = context.getEnvironment();
         log.info("====================================================================");
+        log.info("====================================================================");
         log.info("项目版本: {}", env.getProperty("project.version"));
         log.info("启动环境: {}", env.getProperty("project.env"));
         log.info("启动端口: {}", env.getProperty("server.port"));
